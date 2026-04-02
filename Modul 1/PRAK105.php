@@ -1,6 +1,6 @@
 <?php
 
-$daftarSmartphone = [
+$daftarSmartphoneSamsung = [
     "HP1" => "Samsung Galaxy S22",
     "HP2" => "Samsung Galaxy S22+",
     "HP3" => "Samsung Galaxy A03",
@@ -30,7 +30,7 @@ $daftarSmartphone = [
     <tr>
         <th>Daftar Smartphone Samsung</th>
     </tr>
-    <?php foreach ($daftarSmartphone as $kunci => $smartphone) : ?>
+    <?php foreach ($daftarSmartphoneSamsung as $kunci => $smartphone) : ?>
         <tr>
             <td><?= $smartphone ?></td>
         </tr>
