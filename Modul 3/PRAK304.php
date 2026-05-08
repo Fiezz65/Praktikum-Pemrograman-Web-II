@@ -18,13 +18,13 @@ if (isset($_POST['kurang'])) {
 }
 ?>
 
-<?php if ($bintang == 0): ?>
-    <form action="" method="POST">
-        <label for="bintang">Jumlah bintang</label>
-        <input type="number" name="bintang" id="bintang" required> <br>
-        <button type="submit" name="submit">Submit</button>
-    </form>
-<?php else: ?>
+<form action="" method="POST">
+    <label for="bintang">Jumlah bintang</label>
+    <input type="number" name="bintang" id="bintang" value="<?= $bintang > 0 ? $bintang : '' ?>" required> <br>
+    <button type="submit" name="submit">Submit</button>
+</form>
+
+<?php if ($bintang > 0): ?>
     <p>Jumlah bintang <?= $bintang ?></p>
 
     <?php
