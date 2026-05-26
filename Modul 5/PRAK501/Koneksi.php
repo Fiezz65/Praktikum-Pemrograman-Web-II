@@ -1,9 +1,9 @@
 <?php
 function getKoneksi() {
-    $host = 'localhost';
-    $db   = 'prak501';
-    $user = 'root';
-    $pass = '';
+    $host = 'sql206.infinityfree.com';
+    $db   = 'if0_42025413_prak501';
+    $user = 'if0_42025413';
+    $pass = 'lixie6705';
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
