@@ -3,7 +3,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class MyModel extends Model
+class PraktikanModel extends Model
 {
     public function getData()
     {

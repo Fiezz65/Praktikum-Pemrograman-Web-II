@@ -2,13 +2,13 @@
 
 namespace App\Controllers;
 
-use App\Models\MyModel;
+use App\Models\PraktikanModel;
 
 class Home extends BaseController
 {
     public function index()
     {
-        $model = new MyModel();
+        $model = new PraktikanModel();
         $data['praktikan'] = $model->getData();
 
         echo view('layout/header', ['title' => 'Beranda']);
@@ -17,7 +17,7 @@ class Home extends BaseController
 
     public function profile()
     {
-        $model = new MyModel();
+        $model = new PraktikanModel();
         $data['praktikan'] = $model->getData();
 
         echo view('layout/header', ['title' => 'Profil']);
