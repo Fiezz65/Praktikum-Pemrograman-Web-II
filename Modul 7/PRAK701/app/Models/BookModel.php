@@ -8,8 +8,8 @@ class BookModel extends Model
 {
     protected $table      = 'buku';
     protected $primaryKey = 'id';
-    
+
     protected $useAutoIncrement = true;
-    
+
     protected $allowedFields = ['judul', 'penulis', 'penerbit', 'tahun_terbit'];
 }
